@@ -1,0 +1,22 @@
+current directory: /home/rupabh/Desktop/projects/notenote/vendor/bundle/gems/json-1.8.1/ext/json/ext/generator
+/usr/bin/ruby2.3 -r ./siteconf20171004-17343-u3ekcm.rb extconf.rb
+creating Makefile
+
+current directory: /home/rupabh/Desktop/projects/notenote/vendor/bundle/gems/json-1.8.1/ext/json/ext/generator
+make "DESTDIR=" clean
+
+current directory: /home/rupabh/Desktop/projects/notenote/vendor/bundle/gems/json-1.8.1/ext/json/ext/generator
+make "DESTDIR="
+compiling generator.c
+In file included from generator.c:1:0:
+../fbuffer/fbuffer.h: In function ‘fbuffer_to_s’:
+../fbuffer/fbuffer.h:175:47: error: macro "rb_str_new" requires 2 arguments, but only 1 given
+     VALUE result = rb_str_new(FBUFFER_PAIR(fb));
+                                               ^
+../fbuffer/fbuffer.h:175:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     VALUE result = rb_str_new(FBUFFER_PAIR(fb));
+                    ^
+Makefile:239: recipe for target 'generator.o' failed
+make: *** [generator.o] Error 1
+
+make failed, exit code 2

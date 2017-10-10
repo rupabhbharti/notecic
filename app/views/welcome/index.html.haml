@@ -1,0 +1,33 @@
+#banner
+	.banner_content
+		%h1 NoteCIC
+		%p Your online notebook. Never forget an idea again.
+		%button= link_to "Sign Up", new_user_registration_path
+#testimonial
+	.wrapper
+		%p.quote "A Notebook application for CICns"
+#callouts
+	.callout_inner
+		.wrapper
+			.callout
+				%h2 Remember Everything
+				%p Organize your work and declutter your life. Collect everything that matters in one place and find it when you need it, fast.
+
+			.callout
+				%h2 Work Smarter
+				%p Enhance your writing skills by writing regularly.
+
+			.callout
+				%h2 Bring It All Together
+				%p Organized teams get more done. From initial brainstorm to finished project, make Evernote your team hub and find productivity bliss.
+#bottom_cta
+	.wrapper
+		%h2 Stay organized and get more done.
+		%button= link_to "Click Meee!!!", new_user_registration_path
+
+%footer
+	%p#footie
+	Made by
+	%a{:href => "https://github.com/TheDreamSaver/"} Ashish Jha
+	&
+	%a{:href => "https://github.com/RupabhBharti/"} Rupabh Bharti
